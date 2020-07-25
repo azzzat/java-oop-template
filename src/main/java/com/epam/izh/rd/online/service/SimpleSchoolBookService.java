@@ -10,8 +10,8 @@ public class SimpleSchoolBookService implements BookService<SchoolBook> {
     private BookRepository<SchoolBook> schoolBookBookRepository;
     private AuthorService authorService;
 
-    SimpleSchoolBookService () {};
-    SimpleSchoolBookService (BookRepository<SchoolBook> schoolBookBookRepository, AuthorService authorService) {
+    public SimpleSchoolBookService () {};
+    public SimpleSchoolBookService (BookRepository<SchoolBook> schoolBookBookRepository, AuthorService authorService) {
         this.schoolBookBookRepository = schoolBookBookRepository;
         this.authorService = authorService;
     }
